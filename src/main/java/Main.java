@@ -4,7 +4,7 @@ public class Main {
         PaymentStrategy strategy;
 
         String paymentMethod = "creditcard";
-        if (paymentMethod.equals("paypal")) {
+        if (paymentMethod.equals("creditcard")) {
             strategy = new CreditCardPayment();
         } else {
             strategy = new PayPalPayment();
